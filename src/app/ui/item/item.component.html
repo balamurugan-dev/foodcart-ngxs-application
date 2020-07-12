@@ -1,0 +1,13 @@
+<div class="food">
+  <img class="icon" [src]="food.location" alt="" srcset="">
+  <h3 class="name">{{food.name}}</h3>
+  <p class="desc">{{food.desc}}</p>
+  <div *ngIf="!showAddRemove" fxLayout="row" fxLayoutAlign="center center">
+    <i (click)="addItem()" class="material-icons add">add_shopping_cart</i>
+  </div>
+  <div *ngIf="showAddRemove" fxLayout="row" fxLayoutAlign="space-around center">
+    <i (click)="decCount()" class="material-icons small-but">remove</i>
+    <h3>{{count}}</h3>
+    <i (click)="incCount()" class="material-icons small-but">add</i>
+  </div>
+</div>

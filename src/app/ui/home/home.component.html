@@ -1,0 +1,14 @@
+<div class="home">
+  <div class="header" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <i class="material-icons">fastfood</i>
+    <h2 fxFlex>Food Cart</h2>
+    <i class="material-icons">shopping_cart</i>
+  </div>
+
+  <div class="body">
+    <h2 class="head">Foods</h2>
+    <div class="foods-list" fxLayout="row" fxLayoutGap="25px" fxLayoutAlign="start stretch">
+      <app-item *ngFor="let food of foods" [food]="food"></app-item>
+    </div>
+  </div>
+</div>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "foodcart-ngxs"
+    }
+  },
+  "defaultProject": "foodcart-ngxs",
+  "cli": {
+    "analytics": false
+  }
 }

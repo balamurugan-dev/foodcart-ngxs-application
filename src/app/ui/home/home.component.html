@@ -8,7 +8,7 @@
   <div class="body">
     <h2 class="head">Foods</h2>
     <div class="foods-list" fxLayout="row" fxLayoutGap="25px" fxLayoutAlign="start stretch">
-      <app-item *ngFor="let food of foods" [food]="food"></app-item>
+      <app-item *ngFor="let food of foods$ | async" [food]="food"></app-item>
     </div>
   </div>
 </div>

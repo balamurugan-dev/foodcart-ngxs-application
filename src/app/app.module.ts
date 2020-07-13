@@ -9,12 +9,14 @@ import { NgxsModule } from '@ngxs/store';
 import { HomeComponent } from './ui/home/home.component';
 import { ItemComponent } from './ui/item/item.component';
 import { CartState } from './store/cart/cart.state';
+import { CartComponent } from './ui/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ItemComponent
+    ItemComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
